@@ -1,0 +1,63 @@
+# GRUB2 gfxmenu EndeavourOS
+# @linux-aarhus https://root.nix.dk
+
+# endeavours colors from icon
+# https://github.com/endeavouros-team/artwork-images-logo/blob/master/eos-icon.png
+
+# background sail: #FF7F7F
+# foreground sail: #7F7FFF
+# sail overlap:    #7F3FBF
+
+# Global Property
+title-text: ""
+title-font: "DejaVu Sans 16"
+title-color: "#7F7FFF"
+
+desktop-image: "background.png"
+desktop-color: "#cccccc"
+
+terminal-font: "Terminus Regular 14"
+terminal-box: "terminal_box_*.png"
+terminal-left: "10%"
+terminal-top: "10%"
+terminal-width: "80%"
+terminal-height: "80%"
+terminal-border: "1"
+
+# Show the boot menu
++ boot_menu {
+  left = 21%
+  top = 36%
+  width = 60%
+  height = 70%
+
+  item_font = "DejaVu Sans 24"
+  item_color = "#FF7F7F"
+  item_height = 48
+  item_icon_space = 8
+  item_spacing = 5
+  item_padding = 5
+
+  selected_item_font = "DejaVu Sans 24"
+  selected_item_color = "#FF7F7F"
+  selected_item_pixmap_style = "select_*.png"
+
+  icon_height = 48
+  icon_width = 48
+
+  scrollbar = true
+  scrollbar_width = 10
+  scrollbar_thunb = "slider_*.png"
+}
+
++ progress_bar {
+  id = "__timeout__"
+  text = "@TIMEOUT_NOTIFICATION_SHORT@"
+
+  left = 90%
+  width = 48
+  top = 95%
+  text_color = "#7F7FFF"
+  bar_style = "*"
+  highlight_style = "*"
+}
