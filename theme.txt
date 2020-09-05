@@ -31,14 +31,14 @@ terminal-border: "1"
   width = 60%
   height = 70%
 
-  item_font = "DejaVu Sans 24"
+  item_font = "DejaVu Regular 32"
   item_color = "#FF7F7F"
   item_height = 48
   item_icon_space = 8
   item_spacing = 5
   item_padding = 5
 
-  selected_item_font = "DejaVu Sans 24"
+  selected_item_font = "DejaVu Regular 32"
   selected_item_color = "#FF7F7F"
   selected_item_pixmap_style = "select_*.png"
 
