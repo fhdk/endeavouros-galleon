@@ -65,5 +65,5 @@ desktop-image: "splash_169.png"
 #desktop-image: "splash_43.png"
 ```
 
-[1]: endeavouros-nix-grub.png
-[2]: endeavouros-nix-boot.png
+[1]: endeavouros-galleon-grub.png	"EndeavourOS Galleon Grub"
+[2]: endeavouros-galleon-boot.png	"EndeavourOS Galleon Boot"

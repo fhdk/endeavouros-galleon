@@ -1,11 +1,14 @@
 # Maintainer: root.nix.dk
 
-pkgname=endeavouros-nix
-pkgver=0.1
+pkgname='endeavouros-galleon'
+pgkdesc='EndeavourOS Galleon GRUB Theme'
+pkgver=0.2
 pkgrel=1
 arch=('any')
 license=('MIT')
 install=theme.install
+provides=('galleon-grub-theme')
+replaces=('endeavouros-nix')
 
 
 package() {
