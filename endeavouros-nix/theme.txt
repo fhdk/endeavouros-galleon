@@ -16,7 +16,12 @@ title-font: "DejaVu Sans 16"
 #title-color: "#7F3FBF"       # sail overlap:    #7F3FBF
 title-color: "#FFFFFF"
 
-desktop-image: "splash.png"
+
+# 16:9 splash
+desktop-image: "splash_169.png"
+# 4:3 splash
+#desktop-image: "splash_43.png"
+
 desktop-color: "#000000"
 
 terminal-font: "Terminus Regular 14"

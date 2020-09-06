@@ -16,32 +16,54 @@
 
 Clone the repo
 
-    git clone https://github.com/fhdk/endeavouros-grub-theme
+```bash
+$ git clone https://github.com/fhdk/endeavouros-grub-theme
+```
 
 Change into the folder
 
-    cd endeavouros-grub-theme
+```bash
+$ cd endeavouros-grub-theme
+```
 
 Use `makepkg` to build and install
 
-    makepkg -i
+```bash
+$ makepkg -i
+```
 
 ### If you prefer the manual method
 
 Copy the theme to the grub themes folder
 
-    sudo cp -R endeavorous-nix /boot/grub/themes
+```bash
+sudo cp -R endeavorous-nix /boot/grub/themes
+```
 
 Then - as root - edit your grub default **/etc/default/grub** to look like this
 
-    GRUB_THEME="/boot/grub/themes/endeavouros-nix/theme.txt"
+```txt
+GRUB_THEME="/boot/grub/themes/endeavouros-nix/theme.txt"
+```
 
 Finally rebuild grub
 
-    grub-mkconfig -o /boot/grub/grub.cfg
+```bash
+$ sudo grub-mkconfig -o /boot/grub/grub.cfg
+```
 
 Reboot
 
+## Change format
+
+The theme uses 16:9 format. If you prefer 4:3 modify the **theme.txt** file in the theme folder to use either 4:3 format
+
+```
+# 16:9 splash
+desktop-image: "splash_169.png"
+# 4:3 splash
+#desktop-image: "splash_43.png"
+```
 
 [1]: endeavouros-nix-grub.png
 [2]: endeavouros-nix-boot.png
