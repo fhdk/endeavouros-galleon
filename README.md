@@ -56,7 +56,7 @@ Reboot
 
 ## Change format
 
-The theme uses 16:9 format. If you prefer 4:3 modify the **theme.txt** file in the theme folder to use either 4:3 format
+The theme uses 16:9 format. If you prefer 4:3 modify the **theme.txt** file in the theme folder to use either format
 
 ```
 # 16:9 splash
