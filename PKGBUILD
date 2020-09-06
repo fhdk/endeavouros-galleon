@@ -2,7 +2,7 @@
 
 pkgname='endeavouros-galleon'
 pgkdesc='EndeavourOS Galleon GRUB Theme'
-pkgver=0.2
+pkgver=0.3
 pkgrel=1
 arch=('any')
 license=('MIT')
