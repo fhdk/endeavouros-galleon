@@ -35,9 +35,8 @@ terminal-border: "1"
 # Show the boot menu
 + boot_menu {
   left = 16%
-  top = 36%
+  top = 38%
   width = 70%
-  height = 30%
 
   menu_pixmap_style = "menu_box_*.png"
 
