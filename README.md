@@ -1,5 +1,9 @@
 ## Endeavouros grub theme
 
+![][1]
+
+![][2]
+
 ### Icons is snatched from
 
 * https://www.gnome-look.org/p/1000140/
@@ -37,3 +41,7 @@ Finally rebuild grub
     grub-mkconfig -o /boot/grub/grub.cfg
 
 Reboot
+
+
+[1]: endeavouros-nix-grub.png
+[2]: endeavouros-nix-boot.png
