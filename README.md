@@ -10,12 +10,25 @@
 
 ## Installation
 
-Clone the repo and - as root - copy the files to e.g.
+Clone the repo
 
-    /boot/grub/themes/endeavouros-nix
+    git clone https://github.com/fhdk/endeavouros-grub-theme
+
+Change into the folder
+
+    cd endeavouros-grub-theme
+
+Use `makepkg` to build and install
+
+    makepkg -i
+
+### If you prefer the manual method
+
+Copy the theme to the grub themes folder
+
+    sudo cp -R endeavorous-nix /boot/grub/themes
 
 Then - as root - edit your grub default **/etc/default/grub** to look like this
-
 
     GRUB_THEME="/boot/grub/themes/endeavouros-nix/theme.txt"
 
@@ -24,5 +37,3 @@ Finally rebuild grub
     grub-mkconfig -o /boot/grub/grub.cfg
 
 Reboot
-
-
