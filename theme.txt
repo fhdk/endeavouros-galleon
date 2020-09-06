@@ -11,10 +11,13 @@
 # Global Property
 title-text: ""
 title-font: "DejaVu Sans 16"
-title-color: "#7F7FFF"
+#title-color: "#FF7F7F"       # background sail: #FF7F7F
+#title-color: "#7F7FFF"       # foreground sail: #7F7FFF
+#title-color: "#7F3FBF"       # sail overlap:    #7F3FBF
+title-color: "#FFFFFF"
 
-desktop-image: "background.png"
-desktop-color: "#cccccc"
+desktop-image: "splash.png"
+desktop-color: "#000000"
 
 terminal-font: "Terminus Regular 14"
 terminal-box: "terminal_box_*.png"
@@ -26,20 +29,30 @@ terminal-border: "1"
 
 # Show the boot menu
 + boot_menu {
-  left = 21%
+  left = 16%
   top = 36%
-  width = 60%
-  height = 70%
+  width = 70%
+  height = 30%
 
-  item_font = "DejaVu Regular 32"
-  item_color = "#FF7F7F"
+  menu_pixmap_style = "menu_box_*.png"
+
+  #item_color = "#FF7F7F"       # background sail: #FF7F7F
+  #item_color = "#7F7FFF"       # foreground sail: #7F7FFF
+  #item_color = "#7F3FBF"       # sail overlap:    #7F3FBF
+  item_color = "#FFFFFF"
+
+  item_font = "DejaVu Sans 24"
   item_height = 48
   item_icon_space = 8
   item_spacing = 5
   item_padding = 5
 
-  selected_item_font = "DejaVu Regular 32"
-  selected_item_color = "#FF7F7F"
+  #selected_item_color = "#FF7F7F"       # background sail: #FF7F7F
+  #selected_item_color = "#7F7FFF"       # foreground sail: #7F7FFF
+  #selected_item_color = "#7F3FBF"       # sail overlap:    #7F3FBF
+  selected_item_color = "#FFFFFF"
+
+  selected_item_font = "DejaVu Sans 24"
   selected_item_pixmap_style = "select_*.png"
 
   icon_height = 48
@@ -50,14 +63,18 @@ terminal-border: "1"
   scrollbar_thunb = "slider_*.png"
 }
 
-+ progress_bar {
-  id = "__timeout__"
-  text = "@TIMEOUT_NOTIFICATION_SHORT@"
-
-  left = 90%
-  width = 48
-  top = 95%
-  text_color = "#7F7FFF"
-  bar_style = "*"
-  highlight_style = "*"
++ circular_progress
+{
+   id = "__timeout__"
+   left = 50%-80
+   top = 100%-200
+   height = 160
+   width = 160
+   num_ticks = 31
+   ticks_disappear = true
+   start_angle = -56
+   end_angle = 200
+   center_bitmap = "power_button.png"
+   tick_bitmap = "tick.png"
 }
+
