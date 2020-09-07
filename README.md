@@ -17,13 +17,13 @@
 Clone the repo
 
 ```bash
-$ git clone https://github.com/fhdk/endeavouros-grub-theme
+$ git clone https://github.com/fhdk/endeavouros-galleon
 ```
 
 Change into the folder
 
 ```bash
-$ cd endeavouros-grub-theme
+$ cd endeavouros-galleon
 ```
 
 Use `makepkg` to build and install
@@ -37,13 +37,13 @@ $ makepkg -i
 Copy the theme to the grub themes folder
 
 ```bash
-sudo cp -R endeavorous-nix /boot/grub/themes
+sudo cp -R endeavorous-galleon /usr/share/grub/themes
 ```
 
 Then - as root - edit your grub default **/etc/default/grub** to look like this
 
 ```txt
-GRUB_THEME="/boot/grub/themes/endeavouros-nix/theme.txt"
+GRUB_THEME="/usr/share/grub/themes/endeavouros-galleon/theme.txt"
 ```
 
 Finally rebuild grub
