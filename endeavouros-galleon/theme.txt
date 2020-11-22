@@ -18,9 +18,9 @@ title-color: "#FFFFFF"
 
 
 # 16:9 splash
-desktop-image: "splash_169.png"
+#desktop-image: "splash_169.png"
 # 4:3 splash
-#desktop-image: "splash_43.png"
+desktop-image: "splash_43.png"
 
 desktop-color: "#000000"
 
@@ -34,9 +34,9 @@ terminal-border: "1"
 
 # Show the boot menu
 + boot_menu {
-  left = 10%
-  top = 10%
-  width = 80%
+  left = 17%
+  top = 35%
+  width = 66%
   height = 60%
 
   menu_pixmap_style = "menu_box_*.png"
@@ -44,6 +44,7 @@ terminal-border: "1"
   #item_color = "#FF7F7F"       # background sail: #FF7F7F
   #item_color = "#7F7FFF"       # foreground sail: #7F7FFF
   #item_color = "#7F3FBF"       # sail overlap:    #7F3FBF
+
   item_color = "#FFFFFF"
 
   item_font = "DejaVu Sans 24"
@@ -55,6 +56,7 @@ terminal-border: "1"
   #selected_item_color = "#FF7F7F"       # background sail: #FF7F7F
   #selected_item_color = "#7F7FFF"       # foreground sail: #7F7FFF
   #selected_item_color = "#7F3FBF"       # sail overlap:    #7F3FBF
+
   selected_item_color = "#FFFFFF"
 
   selected_item_font = "DejaVu Sans 24"
@@ -71,8 +73,8 @@ terminal-border: "1"
 + circular_progress
 {
    id = "__timeout__"
-   left = 50%-80
-   top = 100%-200
+   left = 0
+   top = 100%-160
    height = 160
    width = 160
    num_ticks = 31
@@ -82,4 +84,3 @@ terminal-border: "1"
    center_bitmap = "power_button.png"
    tick_bitmap = "tick.png"
 }
-
